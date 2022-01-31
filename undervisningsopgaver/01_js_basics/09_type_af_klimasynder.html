@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let time = 12;
+      let co2 = 109;
+      let co2Udledt = time * co2;
+      let respons;
+
+      if (co2Udledt < 100) {
+        respons = "tæt på thunberg";
+      } else if (co2Udledt < 200) {
+        respons = "jaja du behøver ikke melde dig ud af Å";
+      } else if (co2Udledt < 600) {
+        respons = "det er godt for turismen i nordeuropa";
+      } else {
+        respons = "nå ja vi kan jo altid kolonisere en anden planet";
+      }
+
+      console.log(
+        `ved ${time} timers flyrejse har du udledt ${co2Udledt} kg Co2. ${respons}`
+      );
+    </script>
+  </body>
+</html>
